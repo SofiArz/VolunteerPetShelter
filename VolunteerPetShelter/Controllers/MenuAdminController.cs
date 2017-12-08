@@ -13,5 +13,25 @@ namespace VolunteerPetShelter.Controllers
         {
             return View();
         }
+
+        public ActionResult AwaitingRequests()
+        {
+            return View();
+        }
+
+        public ActionResult RejectedRequests()
+        {
+            return View();
+        }
+
+        public ActionResult AcceptedRequests()
+        {
+            return View();
+        }
+
+        public ActionResult Contacted()
+        {
+            return View();
+        }
     }
 }

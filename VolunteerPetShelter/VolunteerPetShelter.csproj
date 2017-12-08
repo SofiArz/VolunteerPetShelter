@@ -109,6 +109,9 @@
     <Content Include="Content\dist\css\sb-admin-2.min.css" />
     <Content Include="Content\dist\js\sb-admin-2.js" />
     <Content Include="Content\dist\js\sb-admin-2.min.js" />
+    <Content Include="Content\images\slide\1.jpg" />
+    <Content Include="Content\images\slide\2.jpg" />
+    <Content Include="Content\images\slide\sad.jpg" />
     <Content Include="Content\js\sb-admin-2.js" />
     <Content Include="Content\vendor\bootstrap-social\bootstrap-social.css" />
     <Content Include="Content\vendor\bootstrap\css\bootstrap.css" />
@@ -203,6 +206,7 @@
   <ItemGroup>
     <Compile Include="App_Start\BundleConfig.cs" />
     <Compile Include="App_Start\RouteConfig.cs" />
+    <Compile Include="Controllers\HomeMenuController.cs" />
     <Compile Include="Controllers\MenuAdminController.cs" />
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
@@ -266,6 +270,12 @@
     <Content Include="Views\Shared\_LayoutAdmin.cshtml" />
     <Content Include="Views\_ViewStart.cshtml" />
     <Content Include="Views\MenuAdmin\Home.cshtml" />
+    <Content Include="Views\MenuAdmin\AwaitingRequests.cshtml" />
+    <Content Include="Views\MenuAdmin\RejectedRequests.cshtml" />
+    <Content Include="Views\MenuAdmin\AcceptedRequests.cshtml" />
+    <Content Include="Views\MenuAdmin\Contacted.cshtml" />
+    <Content Include="Views\HomeMenu\Index.cshtml" />
+    <Content Include="Views\Shared\_LayoutHome.cshtml" />
     <None Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
     </None>

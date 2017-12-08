@@ -29,7 +29,6 @@ C:\Users\Sofia\Desktop\MVC-Prueba\VolunteerPetShelter\VolunteerPetShelter\bin\es
 C:\Users\Sofia\Desktop\MVC-Prueba\VolunteerPetShelter\VolunteerPetShelter\bin\es\System.Web.Webpages.Razor.resources.dll
 C:\Users\Sofia\Desktop\MVC-Prueba\VolunteerPetShelter\VolunteerPetShelter\bin\es\System.Web.Helpers.resources.dll
 C:\Users\Sofia\Desktop\MVC-Prueba\VolunteerPetShelter\VolunteerPetShelter\bin\es\System.Web.Mvc.resources.dll
-C:\Users\Sofia\Desktop\MVC-Prueba\VolunteerPetShelter\VolunteerPetShelter\obj\Debug\VolunteerPetShelter.csprojResolveAssemblyReference.cache
 C:\Users\Sofia\Desktop\MVC-Prueba\VolunteerPetShelter\VolunteerPetShelter\obj\Debug\VolunteerPetShelter.csproj.CoreCompileInputs.cache
 C:\Users\Sofia\Desktop\MVC-Prueba\VolunteerPetShelter\VolunteerPetShelter\obj\Debug\VolunteerPetShelter.dll
 C:\Users\Sofia\Desktop\MVC-Prueba\VolunteerPetShelter\VolunteerPetShelter\obj\Debug\VolunteerPetShelter.pdb
