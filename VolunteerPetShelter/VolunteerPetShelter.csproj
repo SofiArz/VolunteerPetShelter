@@ -364,6 +364,7 @@
     <Content Include="Views\MenuAdmin\Contacted.cshtml" />
     <Content Include="Views\HomeMenu\Index.cshtml" />
     <Content Include="Views\Shared\_LayoutHome.cshtml" />
+    <Content Include="Views\HomeMenu\Volunteer.cshtml" />
     <None Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
     </None>

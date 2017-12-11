@@ -11,6 +11,13 @@ namespace VolunteerPetShelter.Controllers
         // GET: HomeMenu
         public ActionResult Index()
         {
+            ViewBag.Title = "Inicio";
+            return View();
+        }
+
+        public ActionResult Volunteer()
+        {
+            ViewBag.Title = "Voluntarios";
             return View();
         }
     }
