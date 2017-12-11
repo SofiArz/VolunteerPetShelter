@@ -20,5 +20,12 @@ namespace VolunteerPetShelter.Controllers
             ViewBag.Title = "Voluntarios";
             return View();
         }
+        public ActionResult VolunteerForm()
+        {
+            ViewBag.Title = "Formulario Voluntarios";
+            return View();
+        }
+
+
     }
 }

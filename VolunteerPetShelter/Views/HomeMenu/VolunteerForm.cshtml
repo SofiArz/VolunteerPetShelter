@@ -1,0 +1,171 @@
+﻿
+@{
+    Layout = "~/Views/Shared/_LayoutHome.cshtml";
+}
+
+<!DOCTYPE html>
+
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    
+</head>
+<body style="background-color:bisque;">
+    <div style="height: 9%;background-color: #fb9079;width: 100%;position: fixed;top: 0;"></div>
+    <div class="masthead text-center text-white d-flex" style="background-color:bisque;margin-top:10%;">
+        <div class="container my-auto">
+            <div class="row" style="margin:8%">
+                <div class="col-lg-10 mx-auto">
+                    <h1 class="text-uppercase">
+                        <strong style="color:#f14d4d; font-size: 50px;">POSTULARME COMO VOLUNTARIO</strong>
+                    </h1>
+                    <hr style="padding-bottom: 7%;">
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="row" style="background-color:#f14d4d;">
+        <div class="col-lg-8 mx-auto text-center">
+          
+            <hr class="light my-4" >
+            <p class="text-faded mb-4" style="text-align: justify;font-size: 20px;">
+                El objetivo de este cuestionario es coordinar tus intereses y ganas de ayudar con las necesidades que tenemos en las diferentes áreas de Cold Snouts.<br /><br />
+                Es muy importante que tu compromiso sea sólido y constante. Ser voluntario es donar una parte de tu vida a otro ser que lo necesita e implica responsabilidades y esfuerzos.<br /><br />
+                De nuestra parte te abrimos las puertas para que puedas aplicar y obtener nuevos conocimientos, conocer gente que siente como vos, trabajar en equipo, realizar una actividad muy gratificante, divertirte y ante todo ayudar a seres vulnerables que dependen de todos nosotros.<br /><br />
+            </p>
+
+            <hr class="light my-4">
+
+        </div>
+    </div>
+
+
+    <div class="container" style="margin-top: 10%;">
+        <div class="row">
+            <!-- panel preview -->
+            <div class="col-sm-5">
+                <h3>Datos Personales:</h3>
+                <div class="panel panel-default">
+                    <div class="panel-body form-horizontal payment-form">
+                        <div class="form-group">
+                            <label for="name" class="col-sm-3 control-label">Nombre:</label>
+                            <div class="col-sm-9">
+                                <input type="text" class="form-control" id="name" name="name">
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <label for="surname" class="col-sm-3 control-label">Apellido:</label>
+                            <div class="col-sm-9">
+                                <input type="text" class="form-control" id="surname" name="surname">
+                            </div>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="date" class="col-sm-3 control-label">Fecha de Nacimiento:</label>
+                            <div class="col-sm-9">
+                                <input type="date" class="form-control" id="date" name="date">
+                            </div>
+                        </div>
+                      
+                        <div class="form-group">
+                            <label for="amount" class="col-sm-3 control-label">Zona de Residencia (Localidad/Barrio):</label>
+                            <div class="col-sm-9">
+                                <input type="text" class="form-control" id="amount" name="amount">
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <label for="tel" class="col-sm-3 control-label">Teléfono:</label>
+                            <div class="col-sm-9">
+                                <input type="tel" class="form-control" id="tel" name="tel">
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <label for="email" class="col-sm-3 control-label">E-mail:</label>
+                            <div class="col-sm-9">
+                                <input type="email" class="form-control" id="email" name="email">
+                            </div>
+                        </div>
+
+
+                        
+
+                        <form class="form-group">
+                            <label for="status" class="col-sm-3 control-label">¿Tenes vehículo?:</label><br>
+                            
+                            <input type="radio" name="vehicle " value="true"> Si
+                            <input type="radio" name="vehicle " value="false"> No<br>
+                        
+                        </form>
+                       
+                      
+                    </div>
+                </div>
+            </div> <!-- / panel preview -->
+            <div class="col-sm-7">
+                <h3>Areas de interés:</h3>
+                <h5>Teniendo en cuenta tu disponibilidad horaria y tu lugar de residencia, ¿en qué área te gustaría participar?</h5>
+                 <hr />
+                <div class="row">
+                    <div class="col-xs-12">
+                        <ol>
+                            <li>
+                                <h6>Tratamientos y cuidado intensivo de animales</h6>
+                                <ul>
+                                    <li>Amplia disponibilidad horaria</li>
+                                    <li>Manejo de animales</li>
+                                    <li>Conocimientos de enfermería veterinaria</li>
+                                </ul>
+                            </li>
+                            <li>
+                                <h6>Medicación, alimentación y limpieza diaria</h6>
+                                <ul>
+                                    <li>Participación fija mínimo 1 vez por semana en turno mañana, tarde o noche</li>
+                                    <li>Manejo de animales</li>
+                                    <li>Carga horaria aprox: 3 horas</li>
+                                </ul>
+                            </li>
+                            <li>
+                                <h6>Jornadas de limpieza y mantenimiento del lugar, paseos y baños de perros:</h6>
+                                <ul>
+                                    <li>Participación fija mínimo 1 vez por semana día sábado o domingo.</li>
+                                    <li>Carga horaria aprox: 3 horas</li>
+                                </ul>
+                            </li>
+                            <li>
+                                <h6>Campañas de castración, adopción, concientización</h6>
+                                <ul>Participación eventual en campañas mensuales planificadas con antelación</ul>
+                                <ul>Carga horaria aprox: 6 horas</ul>
+                            </li>
+                            <li>
+                                <h6>Otras actividades relacionadas a estudiantes avanzados o profesionales en el área de comunicación, diseño gráfico, marketing, abogados con compromiso para participar en casos de maltrato animal y legislación, veterinarios y enfermeros veterinarios, etc.</h6>
+                            </li>
+                        </ol>
+                    
+                    </div>
+                </div>
+               
+                <div class="form-group">
+                    <label for="status" class="col-sm-3 control-label">Status</label>
+                    <div class="col-sm-9">
+                        <select class="form-control" id="status" name="status">
+                            <option>Paid</option>
+                            <option>Unpaid</option>
+                        </select>
+                    </div>
+                </div>
+
+                <div class="row">
+                    <div class="col-xs-12">
+                        <hr style="border:1px dashed #dddddd;">
+                        <button type="button" class="btn btn-primary btn-block">Submit all and finish</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+             
+    
+</body>
+</html>
