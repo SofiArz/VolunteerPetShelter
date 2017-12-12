@@ -26,6 +26,13 @@ namespace VolunteerPetShelter.Controllers
             return View();
         }
 
+        public ActionResult Adoption()
+        {
+            ViewBag.Title = "Adopta";
+            return View();
+
+        }
+
 
     }
 }

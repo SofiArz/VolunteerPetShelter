@@ -214,6 +214,7 @@
     <Content Include="Content\HomeMenu\css\creative.css" />
     <Content Include="Content\HomeMenu\css\creative.min.css" />
     <Content Include="Content\HomeMenu\img\header.jpg" />
+    <Content Include="Content\HomeMenu\img\headerAdoption.jpg" />
     <Content Include="Content\HomeMenu\img\portfolio\thumbnails\1.jpg" />
     <Content Include="Content\HomeMenu\img\portfolio\thumbnails\2.jpg" />
     <Content Include="Content\HomeMenu\img\portfolio\thumbnails\3.jpg" />
@@ -221,6 +222,10 @@
     <Content Include="Content\HomeMenu\img\portfolio\thumbnails\5.jpg" />
     <Content Include="Content\HomeMenu\img\portfolio\thumbnails\6.jpg" />
     <Content Include="Content\HomeMenu\img\portfolio\thumbnails\7.jpg" />
+    <Content Include="Content\HomeMenu\img\portfolio\thumbnails_Adopt\1.jpg" />
+    <Content Include="Content\HomeMenu\img\portfolio\thumbnails_Adopt\2.jpg" />
+    <Content Include="Content\HomeMenu\img\portfolio\thumbnails_Adopt\3.jpg" />
+    <Content Include="Content\HomeMenu\img\portfolio\thumbnails_Adopt\4.jpg" />
     <Content Include="Content\HomeMenu\js\creative.js" />
     <Content Include="Content\HomeMenu\js\creative.min.js" />
     <Content Include="Content\HomeMenu\vendor\bootstrap\css\bootstrap-grid.css" />
@@ -366,6 +371,7 @@
     <Content Include="Views\Shared\_LayoutHome.cshtml" />
     <Content Include="Views\HomeMenu\Volunteer.cshtml" />
     <Content Include="Views\HomeMenu\VolunteerForm.cshtml" />
+    <Content Include="Views\HomeMenu\Adoption.cshtml" />
     <None Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
     </None>
