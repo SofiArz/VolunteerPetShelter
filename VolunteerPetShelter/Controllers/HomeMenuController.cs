@@ -33,6 +33,13 @@ namespace VolunteerPetShelter.Controllers
 
         }
 
+        public ActionResult DogAdoptionForm()
+        {
+            ViewBag.Title = "Adopta";
+            return View();
+
+        }
+
 
     }
 }

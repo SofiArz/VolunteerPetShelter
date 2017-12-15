@@ -1,0 +1,163 @@
+﻿
+@{
+    Layout = "~/Views/Shared/_LayoutHome.cshtml";
+}
+
+<header class="masthead text-center text-white d-flex" style="background-image: url('/Content/HomeMenu/img/portfolio/thumbnails_Adopt/6.jpg');">
+    <div class="container my-auto">
+        <div class="row">
+            <div class="col-lg-10 mx-auto">
+                <h1 class="text-uppercase">
+                    <strong style="color: #962222; font-size: 50px;">Adopta un perro</strong>
+                </h1>
+                <hr>
+            </div>
+            <div class="col-lg-8 mx-auto">
+                <p class="text-faded mb-5" style="font-size:20px;">Completa el siguiente formulario y encontrá la mascota ideal para vos!</p>
+            </div>
+        </div>
+    </div>
+</header>
+
+<div class="container" style="margin-top: 10%;">
+    <div class="row">
+        <!-- panel preview -->
+        <div class="col-sm-5">
+            <h3 style="color:#962222;margin-left:10px;"><strong> Datos Personales: </strong></h3><br /><br />
+            <div class="panel panel-default">
+                <div class="panel-body form-horizontal payment-form">
+                    <div class="form-group">
+                        <label for="name" class="col-sm-3 control-label" style="color:#636060;"><strong>Nombre:</strong></label>
+                        <div class="col-sm-9">
+                            <input type="text" class="form-control" id="name" name="name">
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <label for="surname" class="col-sm-3 control-label" style="color:#636060;"><strong>Apellido:</strong></label>
+                        <div class="col-sm-9">
+                            <input type="text" class="form-control" id="surname" name="surname">
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <label for="date" class="col-sm-6 control-label" style="color:#636060;"><strong>Fecha de Nacimiento:</strong></label>
+                        <div class="col-sm-9">
+                            <input type="date" class="form-control" id="date" name="date">
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <label for="amount" class="col-sm-6 control-label" style="color:#636060;"><strong>Localidad:</strong></label>
+                        <div class="col-sm-9">
+                            <select class="form-control" id="status" name="status">
+                                <option value="1"></option>
+                                <option value="2"></option>
+                                <option value="3"></option>
+                                <option value="4"></option>
+                                <option value="5"></option>
+                            </select>
+                        </div>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="surname" class="col-sm-3 control-label" style="color:#636060;"><strong>Dirección:</strong></label>
+                        <div class="col-sm-9">
+                            <input type="text" class="form-control" id="adress" name="adress">
+                        </div>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="tel" class="col-sm-6 control-label" style="color:#636060;"><strong>Teléfono:</strong></label>
+                        <div class="col-sm-9">
+                            <input type="tel" class="form-control" id="tel" name="tel">
+                        </div>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="email" class="col-sm-6 control-label" style="color:#636060;"><strong>E-mail:</strong></label>
+                        <div class="col-sm-9">
+                            <input type="email" class="form-control" id="email" name="email">
+                        </div>
+                    </div>
+                    <form class="form-group">
+                        <label for="status" class="col-sm-6 control-label" style="color:#636060;"><strong>¿Tenes vehículo?:</strong></label><br>
+
+                        <input type="radio" name="vehicle " value="true" style="margin-left: 13px;color:#636060;" }> Si
+                        <input type="radio" name="vehicle " value="false" style="margin-left:10%;color:#636060;"> No<br>
+
+                    </form>
+                </div>
+            </div>
+        </div> <!-- / panel preview -->
+        <div class="col-sm-7">
+            <h3 style="color:#962222;"><strong>Areas de interés:</strong></h3>
+            <h5 style="color:#636060;">Teniendo en cuenta tu disponibilidad horaria y tu lugar de residencia, ¿en qué área te gustaría participar?</h5>
+            <br />
+            <div class="row">
+                <div class="col-xs-12">
+                    <div style="background-color: beige;padding: 5px;margin-left: 2%;">
+                        <ol style="color:#636060;margin-right: 8%;margin-left: 8%;margin-top: 12%;text-align: justify;">
+                            <li>
+                                <h6><strong>Tratamientos y cuidado intensivo de animales:</strong></h6>
+                                <ul>
+                                    <li>Amplia disponibilidad horaria</li>
+                                    <li>Manejo de animales</li>
+                                    <li>Conocimientos de enfermería veterinaria</li>
+                                </ul>
+                                <br />
+                            </li>
+                            <li>
+                                <h6><strong> Medicación, alimentación y limpieza diaria:</strong></h6>
+                                <ul>
+                                    <li>Participación fija mínimo 1 vez por semana en turno mañana, tarde o noche</li>
+                                    <li>Manejo de animales</li>
+                                    <li>Carga horaria aprox: 3 horas</li>
+                                </ul>
+                                <br />
+                            </li>
+                            <li>
+                                <h6><strong>Jornadas de limpieza y mantenimiento del lugar, paseos y baños de perros:</strong></h6>
+                                <ul>
+                                    <li>Participación fija mínimo 1 vez por semana día sábado o domingo.</li>
+                                    <li>Carga horaria aprox: 3 horas</li>
+                                </ul>
+                                <br />
+                            </li>
+                            <li>
+                                <h6><strong>Campañas de castración, adopción, concientización</strong></h6>
+                                <ul>
+                                    <li>Participación eventual en campañas mensuales planificadas con antelación</li>
+                                    <li>Carga horaria aprox: 6 horas</li>
+                                </ul>
+                                <br />
+                            </li>
+                            <li>
+                                <h6><strong>Otras actividades relacionadas a estudiantes avanzados o profesionales en el área de comunicación, diseño gráfico, marketing, abogados con compromiso para participar en casos de maltrato animal y legislación, veterinarios y enfermeros veterinarios, etc.</strong></h6>
+                                <br /><br />
+                            </li>
+                        </ol>
+                    </div>
+                </div>
+            </div>
+
+            <div class="form-group">
+                <label for="status" class="col-sm-6 control-label" style="margin-top:5%;color:#636060;"><strong> Seleccione área de interés:</strong></label>
+                <div class="col-sm-9">
+                    <select class="form-control" id="status" name="status">
+                        <option value="1">1- Tratamientos y cuidado de animales</option>
+                        <option value="2">2- Medicación, alimentación y limpieza diaria</option>
+                        <option value="3">3- Limpieza y mantenimiento del lugar</option>
+                        <option value="4">4- Campañas de castración, adopción, concientización</option>
+                        <option value="5">5- Otras actividades relacionadas a profesionales</option>
+                    </select>
+                </div>
+            </div>
+
+
+        </div>
+    </div>
+</div>
+<div class="row text-center" style="margin: 5%;">
+    <div class="col-lg-3 mx-auto text-center">
+        <hr style="border:1px dashed #dddddd;">
+        <button type="button" class="btn btn-primary btn-block" onclick="">Enviar solicitud</button>
+    </div>
+</div>

@@ -68,3 +68,7 @@ C:\Users\Sofia\Downloads\VolunteerPetShelter-master\VolunteerPetShelter\obj\Debu
 C:\Users\Sofia\Downloads\VolunteerPetShelter-master\VolunteerPetShelter\obj\Debug\VolunteerPetShelter.dll
 C:\Users\Sofia\Downloads\VolunteerPetShelter-master\VolunteerPetShelter\obj\Debug\VolunteerPetShelter.pdb
 C:\Users\Sofia\Desktop\MVC-Prueba\VolunteerPetShelter\VolunteerPetShelter\obj\Debug\VolunteerPetShelter.csprojResolveAssemblyReference.cache
+C:\Users\Sofia\Desktop\MVC-Prueba\VolunteerPetShelter\VolunteerPetShelter\bin\EntityFramework.dll
+C:\Users\Sofia\Desktop\MVC-Prueba\VolunteerPetShelter\VolunteerPetShelter\bin\EntityFramework.SqlServer.dll
+C:\Users\Sofia\Desktop\MVC-Prueba\VolunteerPetShelter\VolunteerPetShelter\bin\EntityFramework.xml
+C:\Users\Sofia\Desktop\MVC-Prueba\VolunteerPetShelter\VolunteerPetShelter\bin\EntityFramework.SqlServer.xml
