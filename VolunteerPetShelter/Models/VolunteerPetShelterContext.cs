@@ -6,10 +6,10 @@ using System.Web;
 
 namespace VolunteerPetShelter.Models
 {
-    public class Context : DbContext
+    public class VolunteerPetShelterContext : DbContext
     {
      
-        public Context() : base("Context")  {   }
+        public VolunteerPetShelterContext() : base("VolunteerPetShelterContext")  {   }
 
        
         protected override void OnModelCreating(DbModelBuilder modelBuilder)
@@ -35,7 +35,7 @@ namespace VolunteerPetShelter.Models
         /// </summary>
         public DbSet<VolunteerForm> VolunteerForms { get; set; }
 
-        public DbSet<Location> Locations { get; set; }
+      
 
     }
 }

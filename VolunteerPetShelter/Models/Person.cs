@@ -7,7 +7,7 @@ using System.Web;
 
 namespace VolunteerPetShelter.Models
 {
-    public class Person
+    public abstract class Person
     {
         [DatabaseGenerated(DatabaseGeneratedOption.None)]
         [Key]
@@ -19,8 +19,7 @@ namespace VolunteerPetShelter.Models
         [DisplayFormat(DataFormatString = "{0:yyyy-MM-dd}", ApplyFormatInEditMode = true)]
         public DateTime Birthdate { get; set; }
 
-        public int LocationID { get; set; } //foreing key to the Location entity. A Person entity is associated with one Location entity.
-        public virtual Location Location { get; set; }//navigation property name
+        public string Location { get; set; }
 
         public string Address { get; set; }
         public string Email { get; set; }

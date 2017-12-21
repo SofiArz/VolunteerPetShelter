@@ -222,6 +222,7 @@
     <Content Include="Content\HomeMenu\img\header.jpg" />
     <Content Include="Content\HomeMenu\img\headerAdoption.jpg" />
     <Content Include="Content\HomeMenu\img\headerFormVolunteer.jpg" />
+    <Content Include="Content\HomeMenu\img\portfolio\background\1.jpg" />
     <Content Include="Content\HomeMenu\img\portfolio\thumbnails\1.jpg" />
     <Content Include="Content\HomeMenu\img\portfolio\thumbnails\2.jpg" />
     <Content Include="Content\HomeMenu\img\portfolio\thumbnails\3.jpg" />
@@ -265,16 +266,22 @@
   <ItemGroup>
     <Compile Include="App_Start\BundleConfig.cs" />
     <Compile Include="App_Start\RouteConfig.cs" />
+    <Compile Include="Controllers\CRUDVolunteerFormsController.cs" />
     <Compile Include="Controllers\HomeMenuController.cs" />
     <Compile Include="Controllers\MenuAdminController.cs" />
     <Compile Include="Controllers\VolunteerFormController.cs" />
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>
-    <Compile Include="Models\Context.cs" />
-    <Compile Include="Models\Location.cs" />
+    <Compile Include="Migrations\201712211408086_Initial.cs" />
+    <Compile Include="Migrations\201712211408086_Initial.Designer.cs">
+      <DependentUpon>201712211408086_Initial.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\Configuration.cs" />
+    <Compile Include="Models\VolunteerPetShelterContext.cs" />
     <Compile Include="Models\Person.cs" />
     <Compile Include="Models\VolunteerForm.cs" />
+    <Compile Include="Models\VolunteerWorks.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
@@ -384,9 +391,14 @@
     <Content Include="Views\HomeMenu\Index.cshtml" />
     <Content Include="Views\Shared\_LayoutHome.cshtml" />
     <Content Include="Views\HomeMenu\Volunteer.cshtml" />
-    <Content Include="Views\HomeMenu\VolunteerForm.cshtml" />
     <Content Include="Views\HomeMenu\Adoption.cshtml" />
     <Content Include="Views\HomeMenu\DogAdoptionForm.cshtml" />
+    <Content Include="Views\Shared\_Person.cshtml" />
+    <Content Include="Views\CRUDVolunteerForms\Create.cshtml" />
+    <Content Include="Views\CRUDVolunteerForms\Delete.cshtml" />
+    <Content Include="Views\CRUDVolunteerForms\Details.cshtml" />
+    <Content Include="Views\CRUDVolunteerForms\Edit.cshtml" />
+    <Content Include="Views\CRUDVolunteerForms\Index.cshtml" />
     <None Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
     </None>
@@ -396,7 +408,11 @@
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
-    <Folder Include="Views\VolunteerForm\" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Migrations\201712211408086_Initial.resx">
+      <DependentUpon>201712211408086_Initial.cs</DependentUpon>
+    </EmbeddedResource>
   </ItemGroup>
   <PropertyGroup>
     <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>

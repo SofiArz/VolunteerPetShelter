@@ -1,0 +1,214 @@
+﻿@model VolunteerPetShelter.Models.VolunteerForm
+
+@{
+    Layout = "~/Views/Shared/_LayoutHome.cshtml";
+}
+
+
+<!DOCTYPE html>
+
+<header class="masthead text-center text-white d-flex" style=" background-image: url('/Content/HomeMenu/img/headerFormVolunteer.jpg');">
+    <div class="container my-auto">
+        <div class="row">
+            <div class="col-lg-10 mx-auto">
+                <h1 class="text-uppercase">
+                    <strong style="color: #962222; font-size: 50px;">Postulate como voluntario</strong>
+                </h1>
+                <hr>
+            </div>
+            <div class="col-lg-8 mx-auto">
+                <p class="text-faded mb-5" style="font-size:30px;">Cambia realidades</p>
+
+            </div>
+        </div>
+    </div>
+</header>
+
+<html>
+
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <title>Create</title>
+</head>
+
+<body>
+    <div class="row" style="background-color:#f05f40; margin-right:0px;">
+        <div class="row">
+            <div class="col-lg-8 mx-auto text-center">
+                <hr class="light my-4">
+                <p class="text-faded mb-4" style="text-align: justify;font-size: 20px;">
+                    El objetivo de este cuestionario es coordinar tus intereses y ganas de ayudar con las necesidades que tenemos en las diferentes áreas de Cold Snouts.<br /><br />
+                    Es muy importante que tu compromiso sea sólido y constante. Ser voluntario es donar una parte de tu vida a otro ser que lo necesita e implica responsabilidades y esfuerzos.<br /><br />
+                    De nuestra parte te abrimos las puertas para que puedas aplicar y obtener nuevos conocimientos, conocer gente que siente como vos, trabajar en equipo, realizar una actividad muy gratificante, divertirte y ante todo ayudar a seres vulnerables que dependen de todos nosotros.<br /><br />
+                </p>
+                <hr class="light my-4">
+            </div>
+        </div>
+    </div>
+
+    <h3 style="text-align:center;margin-top: 5%;color:#962222;"><strong>¡Completa el formulario para inscribirte!</strong> </h3>
+
+
+
+    @using (Html.BeginForm())
+    {
+        <div class="container" style="margin-top: 5%;">
+            <div class="row">
+                <!-- panel preview -->
+                <div class="col-sm-5" style="color: #696969;font-size: 18px;font-family: 'Open Sans','Helvetica Neue',Arial,sans-serif;">
+                    @Html.AntiForgeryToken()
+                    <h4 style="color:#2d2323;text-align:center;margin-bottom:13%;">Datos de contacto</h4>
+                  
+                    @Html.ValidationSummary(true, "", new { @class = "text-danger" })
+                    <div class="form-group">
+                        @Html.LabelFor(model => model.ID,"DNI", htmlAttributes: new { @class = "control-label col-md-2" })
+                        <div class="col-md-10">
+                            @Html.EditorFor(model => model.ID, new { htmlAttributes = new { @class = "form-control" } })
+                            @Html.ValidationMessageFor(model => model.ID, "", new { @class = "text-danger" })
+                        </div>
+                    </div>
+
+                    <div class="form-group">
+                        @Html.LabelFor(model => model.Name, "Nombre", htmlAttributes: new { @class = "control-label col-md-2" })
+                        <div class="col-md-10">
+                            @Html.EditorFor(model => model.Name, new { htmlAttributes = new { @class = "form-control" } })
+                            @Html.ValidationMessageFor(model => model.Name, "", new { @class = "text-danger" })
+                        </div>
+                    </div>
+
+                    <div class="form-group">
+                        @Html.LabelFor(model => model.LastName, "Apellido", htmlAttributes: new { @class = "control-label col-md-2" })
+                        <div class="col-md-10">
+                            @Html.EditorFor(model => model.LastName, new { htmlAttributes = new { @class = "form-control" } })
+                            @Html.ValidationMessageFor(model => model.LastName, "", new { @class = "text-danger" })
+                        </div>
+                    </div>
+
+                    <div class="form-group">
+                        @Html.LabelFor(model => model.Birthdate, "Fecha de nacimiento", htmlAttributes: new { @class = "control-label col-md-6" })
+                        <div class="col-md-10">
+                            @Html.EditorFor(model => model.Birthdate, new { htmlAttributes = new { @class = "form-control" } })
+                            @Html.ValidationMessageFor(model => model.Birthdate, "", new { @class = "text-danger" })
+                        </div>
+                    </div>
+
+                    <div class="form-group">
+                        @Html.LabelFor(model => model.Location, "Localidad", htmlAttributes: new { @class = "control-label col-md-2" })
+                        <div class="col-md-10">
+                            @Html.EditorFor(model => model.Location, new { htmlAttributes = new { @class = "form-control" } })
+                            @Html.ValidationMessageFor(model => model.Location, "", new { @class = "text-danger" })
+                        </div>
+                    </div>
+
+                    <div class="form-group">
+                        @Html.LabelFor(model => model.Address, "Dirección", htmlAttributes: new { @class = "control-label col-md-2" })
+                        <div class="col-md-10">
+                            @Html.EditorFor(model => model.Address, new { htmlAttributes = new { @class = "form-control" } })
+                            @Html.ValidationMessageFor(model => model.Address, "", new { @class = "text-danger" })
+                        </div>
+                    </div>
+
+                    <div class="form-group">
+                        @Html.LabelFor(model => model.Email, "Email", htmlAttributes: new { @class = "control-label col-md-2" })
+                        <div class="col-md-10">
+                            @Html.EditorFor(model => model.Email, new { htmlAttributes = new { @class = "form-control" } })
+                            @Html.ValidationMessageFor(model => model.Email, "", new { @class = "text-danger" })
+                        </div>
+                    </div>
+
+                    <div class="form-group">
+                        @Html.LabelFor(model => model.Telephone, "Teléfono", htmlAttributes: new { @class = "control-label col-md-2" })
+                        <div class="col-md-10">
+                            @Html.EditorFor(model => model.Telephone, new { htmlAttributes = new { @class = "form-control" } })
+                            @Html.ValidationMessageFor(model => model.Telephone, "", new { @class = "text-danger" })
+                        </div>
+                    </div>
+
+                </div> <!-- / panel preview -->
+
+
+                <div class="col-sm-7"  style="color: #696969;font-size: 18px;font-family: 'Open Sans','Helvetica Neue',Arial,sans-serif;">
+                    <h4 style="color:#2d2323;text-align:center;">Areas de interés</h4>
+                    <h5 style="color:#636060;text-align:center;">Teniendo en cuenta tu disponibilidad horaria y tu lugar de residencia, ¿en qué área te gustaría participar?</h5>
+                    <br />
+                    <div class="row">
+                        <div class="col-xs-12">
+                            <div style="background-color: beige;padding: 5px;margin-left: 2%;">
+                                <ol style="color:#636060;margin-right: 8%;margin-left: 8%;margin-top: 12%;text-align: justify;">
+                                    <li>
+                                        <h6><strong>Tratamientos y cuidado intensivo de animales:</strong></h6>
+                                        <ul>
+                                            <li>Amplia disponibilidad horaria</li>
+                                            <li>Manejo de animales</li>
+                                            <li>Conocimientos de enfermería veterinaria</li>
+                                        </ul>
+                                        <br />
+                                    </li>
+                                    <li>
+                                        <h6><strong> Medicación, alimentación y limpieza diaria:</strong></h6>
+                                        <ul>
+                                            <li>Participación fija mínimo 1 vez por semana en turno mañana, tarde o noche</li>
+                                            <li>Manejo de animales</li>
+                                            <li>Carga horaria aprox: 3 horas</li>
+                                        </ul>
+                                        <br />
+                                    </li>
+                                    <li>
+                                        <h6><strong>Jornadas de limpieza y mantenimiento del lugar, paseos y baños de perros:</strong></h6>
+                                        <ul>
+                                            <li>Participación fija mínimo 1 vez por semana día sábado o domingo.</li>
+                                            <li>Carga horaria aprox: 3 horas</li>
+                                        </ul>
+                                        <br />
+                                    </li>
+                                    <li>
+                                        <h6><strong>Campañas de castración, adopción, concientización</strong></h6>
+                                        <ul>
+                                            <li>Participación eventual en campañas mensuales planificadas con antelación</li>
+                                            <li>Carga horaria aprox: 6 horas</li>
+                                        </ul>
+                                        <br />
+                                    </li>
+                                    <li>
+                                        <h6><strong>Otras actividades relacionadas a estudiantes avanzados o profesionales en el área de comunicación, diseño gráfico, marketing, abogados con compromiso para participar en casos de maltrato animal y legislación, veterinarios y enfermeros veterinarios, etc.</strong></h6>
+                                        <br /><br />
+                                    </li>
+                                </ol>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="form-group">
+                        @Html.LabelFor(model => model.Question1,"¿Tienes coche?", htmlAttributes: new { @class = "control-label col-md-6" })
+                        <div class="col-md-10">
+                            <div class="checkbox">
+                                @Html.EditorFor(model => model.Question1)
+                                @Html.ValidationMessageFor(model => model.Question1, "", new { @class = "text-danger" })
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="form-group">
+                        @Html.LabelFor(model => model.Question2, "Seleccione área de interés", htmlAttributes: new { @class = "control-label col-md-6" })
+                        <div class="col-md-10">
+                            @Html.EnumDropDownListFor(model => model.Question2, htmlAttributes: new { @class = "form-control" })
+                            @Html.ValidationMessageFor(model => model.Question2, "", new { @class = "text-danger" })
+                        </div>
+                    </div>
+
+                    <div class="form-group" style="margin-top:10%; margin-bottom:10%;">
+                        <div class="col-md-offset-2 col-md-10">
+                            <input type="submit" value="Create" class="btn btn-primary btn-xl js-scroll-trigger" />
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+
+    }
+
+  
+
+</body>
+</html>
