@@ -1,6 +1,7 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Linq;
+using System.Net;
 using System.Web;
 using System.Web.Mvc;
 using VolunteerPetShelter.Models;
@@ -33,6 +34,7 @@ namespace VolunteerPetShelter.Controllers
                 && user.Password.Equals(password)) //si existe (no queda null) y la contraseña coincide
             {
                 Session["LoggedUser"] = user; //agregamos el objeto usuario a la sesión, para después tener control sobre él
+                Session["username"] = user.Name;
                 return RedirectToAction("Home", "MenuAdmin");
             }
             //si no existe el usuario o lo contraseña no coincide
@@ -40,55 +42,28 @@ namespace VolunteerPetShelter.Controllers
         }
 
 
-        // GET: User/Details/5
-        public ActionResult Details(int id)
-        {
-            return View();
-        }
-
-        // GET: User/Create
-        public ActionResult Create()
-        {
-            return View();
-        }
-
-        // POST: User/Create
-        [HttpPost]
-        public ActionResult Create(FormCollection collection)
-        {
-            try
-            {
-                // TODO: Add insert logic here
-
-                return RedirectToAction("Index");
-            }
-            catch
-            {
-                return View();
-            }
-        }
+     
 
         // GET: User/Edit/5
-        public ActionResult Edit(int id)
+        public ActionResult Edit(string id)
         {
+
+            if (id == null)
+            {
+                return new HttpStatusCodeResult(HttpStatusCode.BadRequest);
+            }
+
+            User user = db.Users.Find(id);
+
+            if (user == null)
+            {
+                return HttpNotFound();
+            }
             return View();
+            
         }
 
-        // POST: User/Edit/5
-        [HttpPost]
-        public ActionResult Edit(int id, FormCollection collection)
-        {
-            try
-            {
-                // TODO: Add update logic here
-
-                return RedirectToAction("Index");
-            }
-            catch
-            {
-                return View();
-            }
-        }
+     
 
         // GET: User/Delete/5
         public ActionResult Delete(int id)

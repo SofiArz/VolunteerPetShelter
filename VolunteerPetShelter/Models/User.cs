@@ -14,7 +14,11 @@ namespace VolunteerPetShelter.Models
         [Required]
         public string Password { get; set; }
 
-       
+        [Display(Name = "Nombre")]
+        public string Name { get; set; }
+
+        [Display(Name = "Apellido")]
+        public string LastName { get; set; }
 
     }
 }

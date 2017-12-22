@@ -289,6 +289,8 @@
       <DependentUpon>201712212321293_User1.cs</DependentUpon>
     </Compile>
     <Compile Include="Migrations\Configuration.cs" />
+    <Compile Include="Models\AdoptADogForm.cs" />
+    <Compile Include="Models\ListOptions_AdoptForm.cs" />
     <Compile Include="Models\User.cs" />
     <Compile Include="Models\VolunteerPetShelterContext.cs" />
     <Compile Include="Models\Person.cs" />
@@ -410,6 +412,7 @@
     <Content Include="Views\CRUDVolunteerForms\Edit.cshtml" />
     <Content Include="Views\CRUDVolunteerForms\Index.cshtml" />
     <Content Include="Views\User\Login.cshtml" />
+    <Content Include="Views\User\Edit.cshtml" />
     <None Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
     </None>

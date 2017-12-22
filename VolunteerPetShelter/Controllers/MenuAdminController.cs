@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Web;
 using System.Web.Mvc;
+using VolunteerPetShelter.Models;
 
 namespace VolunteerPetShelter.Controllers
 {
@@ -11,9 +12,13 @@ namespace VolunteerPetShelter.Controllers
         // GET: MenuAdmin
         public ActionResult Home()
         {
-            
-            if (Session["LoggedUser"] == null)
+           
+            if (Session["LoggedUser"] == null) { 
+               
                 return RedirectToAction("Login", "User");
+            }
+
+            ViewBag.UserName = Session["username"].ToString();
 
             return View();
         }
