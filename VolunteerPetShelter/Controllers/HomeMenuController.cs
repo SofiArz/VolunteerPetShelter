@@ -10,7 +10,11 @@ namespace VolunteerPetShelter.Controllers
     {
         // GET: HomeMenu
         public ActionResult Index()
-        {
+        {     //preguntamos si está logueado 
+            //(porque en el login agregamos el objeto del usuario)
+           if (Session["LoggedUser"] == null)
+                return RedirectToAction("Login", "User");
+
             ViewBag.Title = "Inicio";
             return View();
         }

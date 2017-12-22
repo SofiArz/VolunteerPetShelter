@@ -74,3 +74,5 @@ C:\Users\Sofia\Desktop\MVC-Prueba\VolunteerPetShelter\VolunteerPetShelter\bin\En
 C:\Users\Sofia\Desktop\MVC-Prueba\VolunteerPetShelter\VolunteerPetShelter\bin\EntityFramework.SqlServer.xml
 C:\Users\Sofia\Desktop\MVC-Prueba\VolunteerPetShelter\VolunteerPetShelter\obj\Debug\VolunteerPetShelter.Migrations.Initial.resources
 C:\Users\Sofia\Desktop\MVC-Prueba\VolunteerPetShelter\VolunteerPetShelter\obj\Debug\VolunteerPetShelter.csproj.GenerateResource.Cache
+C:\Users\Sofia\Desktop\MVC-Prueba\VolunteerPetShelter\VolunteerPetShelter\obj\Debug\VolunteerPetShelter.Migrations.User.resources
+C:\Users\Sofia\Desktop\MVC-Prueba\VolunteerPetShelter\VolunteerPetShelter\obj\Debug\VolunteerPetShelter.Migrations.User1.resources

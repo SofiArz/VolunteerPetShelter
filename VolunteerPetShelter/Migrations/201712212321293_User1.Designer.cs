@@ -7,13 +7,13 @@ namespace VolunteerPetShelter.Migrations
     using System.Resources;
     
     [GeneratedCode("EntityFramework.Migrations", "6.2.0-61023")]
-    public sealed partial class Initial : IMigrationMetadata
+    public sealed partial class User1 : IMigrationMetadata
     {
-        private readonly ResourceManager Resources = new ResourceManager(typeof(Initial));
+        private readonly ResourceManager Resources = new ResourceManager(typeof(User1));
         
         string IMigrationMetadata.Id
         {
-            get { return "201712211408086_Initial"; }
+            get { return "201712212321293_User1"; }
         }
         
         string IMigrationMetadata.Source

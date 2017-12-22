@@ -34,8 +34,9 @@ namespace VolunteerPetShelter.Models
         /// Colección para poder administrar VolunteerForms en la base de datos
         /// </summary>
         public DbSet<VolunteerForm> VolunteerForms { get; set; }
+         
+        public DbSet<User> Users { get; set; }
 
-      
 
     }
 }

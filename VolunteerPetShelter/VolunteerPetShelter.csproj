@@ -130,6 +130,7 @@
     <Content Include="Content\AdminMenu\img\portfolio\thumbnails\6.jpg" />
     <Content Include="Content\AdminMenu\img\portfolio\thumbnails\7.jpg" />
     <Content Include="Content\AdminMenu\js\sb-admin-2.js" />
+    <Content Include="Content\AdminMenu\Login.css" />
     <Content Include="Content\AdminMenu\vendor\bootstrap-social\bootstrap-social.css" />
     <Content Include="Content\AdminMenu\vendor\bootstrap\css\bootstrap.css" />
     <Content Include="Content\AdminMenu\vendor\bootstrap\css\bootstrap.min.css" />
@@ -223,6 +224,7 @@
     <Content Include="Content\HomeMenu\img\headerAdoption.jpg" />
     <Content Include="Content\HomeMenu\img\headerFormVolunteer.jpg" />
     <Content Include="Content\HomeMenu\img\portfolio\background\1.jpg" />
+    <Content Include="Content\HomeMenu\img\portfolio\background\2.jpg" />
     <Content Include="Content\HomeMenu\img\portfolio\thumbnails\1.jpg" />
     <Content Include="Content\HomeMenu\img\portfolio\thumbnails\2.jpg" />
     <Content Include="Content\HomeMenu\img\portfolio\thumbnails\3.jpg" />
@@ -269,15 +271,25 @@
     <Compile Include="Controllers\CRUDVolunteerFormsController.cs" />
     <Compile Include="Controllers\HomeMenuController.cs" />
     <Compile Include="Controllers\MenuAdminController.cs" />
+    <Compile Include="Controllers\UserController.cs" />
     <Compile Include="Controllers\VolunteerFormController.cs" />
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>
-    <Compile Include="Migrations\201712211408086_Initial.cs" />
-    <Compile Include="Migrations\201712211408086_Initial.Designer.cs">
-      <DependentUpon>201712211408086_Initial.cs</DependentUpon>
+    <Compile Include="Migrations\201712212117556_Initial.cs" />
+    <Compile Include="Migrations\201712212117556_Initial.Designer.cs">
+      <DependentUpon>201712212117556_Initial.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\201712212224113_User.cs" />
+    <Compile Include="Migrations\201712212224113_User.Designer.cs">
+      <DependentUpon>201712212224113_User.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\201712212321293_User1.cs" />
+    <Compile Include="Migrations\201712212321293_User1.Designer.cs">
+      <DependentUpon>201712212321293_User1.cs</DependentUpon>
     </Compile>
     <Compile Include="Migrations\Configuration.cs" />
+    <Compile Include="Models\User.cs" />
     <Compile Include="Models\VolunteerPetShelterContext.cs" />
     <Compile Include="Models\Person.cs" />
     <Compile Include="Models\VolunteerForm.cs" />
@@ -393,12 +405,12 @@
     <Content Include="Views\HomeMenu\Volunteer.cshtml" />
     <Content Include="Views\HomeMenu\Adoption.cshtml" />
     <Content Include="Views\HomeMenu\DogAdoptionForm.cshtml" />
-    <Content Include="Views\Shared\_Person.cshtml" />
     <Content Include="Views\CRUDVolunteerForms\Create.cshtml" />
     <Content Include="Views\CRUDVolunteerForms\Delete.cshtml" />
     <Content Include="Views\CRUDVolunteerForms\Details.cshtml" />
     <Content Include="Views\CRUDVolunteerForms\Edit.cshtml" />
     <Content Include="Views\CRUDVolunteerForms\Index.cshtml" />
+    <Content Include="Views\User\Login.cshtml" />
     <None Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
     </None>
@@ -410,8 +422,14 @@
     <Folder Include="App_Data\" />
   </ItemGroup>
   <ItemGroup>
-    <EmbeddedResource Include="Migrations\201712211408086_Initial.resx">
-      <DependentUpon>201712211408086_Initial.cs</DependentUpon>
+    <EmbeddedResource Include="Migrations\201712212117556_Initial.resx">
+      <DependentUpon>201712212117556_Initial.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201712212224113_User.resx">
+      <DependentUpon>201712212224113_User.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201712212321293_User1.resx">
+      <DependentUpon>201712212321293_User1.cs</DependentUpon>
     </EmbeddedResource>
   </ItemGroup>
   <PropertyGroup>

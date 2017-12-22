@@ -22,6 +22,9 @@ namespace VolunteerPetShelter.Migrations
                         VolunteerFormID = c.Int(identity: true),
                         Question1 = c.Boolean(),
                         Question2 = c.Int(),
+                        Mail = c.String(),
+                        Password = c.String(),
+                        Discriminator = c.String(nullable: false, maxLength: 128),
                     })
                 .PrimaryKey(t => t.ID);
             
