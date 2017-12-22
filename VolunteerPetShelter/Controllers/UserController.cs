@@ -17,6 +17,12 @@ namespace VolunteerPetShelter.Controllers
             return View();
         }
 
+        public ActionResult LogOut()
+        {
+            Session["LoggedUser"] = null;
+            return RedirectToAction("Index","HomeMenu");
+        }
+
         [HttpPost]
         public ActionResult DoLogin(string email, string password)
         {

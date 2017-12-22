@@ -13,6 +13,8 @@ namespace VolunteerPetShelter.Models
         public string MailAsId { get; set; }
         [Required]
         public string Password { get; set; }
+
        
+
     }
 }
