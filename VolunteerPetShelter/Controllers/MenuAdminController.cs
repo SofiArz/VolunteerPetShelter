@@ -11,6 +11,10 @@ namespace VolunteerPetShelter.Controllers
         // GET: MenuAdmin
         public ActionResult Home()
         {
+            
+            if (Session["LoggedUser"] == null)
+                return RedirectToAction("Login", "User");
+
             return View();
         }
 

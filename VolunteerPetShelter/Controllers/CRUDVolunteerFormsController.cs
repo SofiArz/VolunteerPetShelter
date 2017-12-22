@@ -17,7 +17,8 @@ namespace VolunteerPetShelter.Controllers
         // GET: CRUDVolunteerForms
         public ActionResult Index()
         {
-            return View(db.Persons.ToList());
+            ViewBag.UserName = "Sofia";
+            return View(db.VolunteerForms.ToList());
         }
 
         // GET: CRUDVolunteerForms/Details/5

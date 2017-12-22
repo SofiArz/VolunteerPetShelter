@@ -396,7 +396,6 @@
     <Content Include="Views\Shared\_LayoutAdmin.cshtml" />
     <Content Include="Views\_ViewStart.cshtml" />
     <Content Include="Views\MenuAdmin\Home.cshtml" />
-    <Content Include="Views\MenuAdmin\AwaitingRequests.cshtml" />
     <Content Include="Views\MenuAdmin\RejectedRequests.cshtml" />
     <Content Include="Views\MenuAdmin\AcceptedRequests.cshtml" />
     <Content Include="Views\MenuAdmin\Contacted.cshtml" />

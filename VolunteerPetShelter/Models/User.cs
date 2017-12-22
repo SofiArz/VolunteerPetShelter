@@ -6,7 +6,7 @@ using System.Web;
 
 namespace VolunteerPetShelter.Models
 {
-    public class User : Person
+    public class User 
     {
         [Key]
         [Required]

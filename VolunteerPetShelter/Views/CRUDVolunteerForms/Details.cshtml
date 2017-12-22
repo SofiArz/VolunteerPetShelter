@@ -1,7 +1,7 @@
 ﻿@model VolunteerPetShelter.Models.VolunteerForm
 
 @{
-    Layout = null;
+    Layout = "~/Views/Shared/_LayoutAdmin.cshtml";
 }
 
 <!DOCTYPE html>
@@ -11,96 +11,101 @@
     <meta name="viewport" content="width=device-width" />
     <title>Details</title>
 </head>
+
 <body>
-    <div>
-        <h4>VolunteerForm</h4>
-        <hr />
-        <dl class="dl-horizontal">
-            <dt>
-                @Html.DisplayNameFor(model => model.Name)
-            </dt>
-    
-            <dd>
-                @Html.DisplayFor(model => model.Name)
-            </dd>
-    
-            <dt>
-                @Html.DisplayNameFor(model => model.LastName)
-            </dt>
-    
-            <dd>
-                @Html.DisplayFor(model => model.LastName)
-            </dd>
-    
-            <dt>
-                @Html.DisplayNameFor(model => model.Birthdate)
-            </dt>
-    
-            <dd>
-                @Html.DisplayFor(model => model.Birthdate)
-            </dd>
-    
-            <dt>
-                @Html.DisplayNameFor(model => model.Location)
-            </dt>
-    
-            <dd>
-                @Html.DisplayFor(model => model.Location)
-            </dd>
-    
-            <dt>
-                @Html.DisplayNameFor(model => model.Address)
-            </dt>
-    
-            <dd>
-                @Html.DisplayFor(model => model.Address)
-            </dd>
-    
-            <dt>
-                @Html.DisplayNameFor(model => model.Email)
-            </dt>
-    
-            <dd>
-                @Html.DisplayFor(model => model.Email)
-            </dd>
-    
-            <dt>
-                @Html.DisplayNameFor(model => model.Telephone)
-            </dt>
-    
-            <dd>
-                @Html.DisplayFor(model => model.Telephone)
-            </dd>
-    
-            <dt>
-                @Html.DisplayNameFor(model => model.VolunteerFormID)
-            </dt>
-    
-            <dd>
-                @Html.DisplayFor(model => model.VolunteerFormID)
-            </dd>
-    
-            <dt>
-                @Html.DisplayNameFor(model => model.Question1)
-            </dt>
-    
-            <dd>
-                @Html.DisplayFor(model => model.Question1)
-            </dd>
-    
-            <dt>
-                @Html.DisplayNameFor(model => model.Question2)
-            </dt>
-    
-            <dd>
-                @Html.DisplayFor(model => model.Question2)
-            </dd>
-    
-        </dl>
+    <div id="page-wrapper">
+        <div class="container-fluid">
+            <div class="row">
+                <div class="col-lg-12">
+
+                    <h2 class="page-header">Datos de contacto</h2>
+                  
+                    <dl class="dl-horizontal">
+                        <dt>
+                            @Html.DisplayNameFor(model => model.Name)
+                        </dt>
+
+                        <dd style="margin-bottom: 1%;">
+                            @Html.DisplayFor(model => model.Name)
+                        </dd>
+
+                        <dt>
+                            @Html.DisplayNameFor(model => model.LastName)
+                        </dt>
+
+                        <dd style="margin-bottom: 1%;">
+                            @Html.DisplayFor(model => model.LastName)
+                        </dd>
+
+                        <dt>
+                            @Html.DisplayNameFor(model => model.Birthdate)
+                        </dt>
+
+                        <dd style="margin-bottom: 1%;">
+                            @Html.DisplayFor(model => model.Birthdate)
+                        </dd>
+
+                        <dt>
+                            @Html.DisplayNameFor(model => model.Location)
+                        </dt>
+
+                        <dd style="margin-bottom: 1%;">
+                            @Html.DisplayFor(model => model.Location)
+                        </dd>
+
+                        <dt>
+                            @Html.DisplayNameFor(model => model.Address)
+                        </dt>
+
+                        <dd style="margin-bottom: 1%;">
+                            @Html.DisplayFor(model => model.Address)
+                        </dd>
+
+                        <dt>
+                            @Html.DisplayNameFor(model => model.Email)
+                        </dt>
+
+                        <dd style="margin-bottom: 1%;">
+                            @Html.DisplayFor(model => model.Email)
+                        </dd>
+
+                        <dt>
+                            @Html.DisplayNameFor(model => model.Telephone)
+                        </dt>
+
+                        <dd style="margin-bottom: 1%;">
+                            @Html.DisplayFor(model => model.Telephone)
+                        </dd>
+
+                        <dt>
+                            @Html.DisplayNameFor(model => model.Question1)
+                        </dt>
+
+                        <dd style="margin-bottom: 1%;">
+                            @Html.DisplayFor(model => model.Question1)
+                        </dd>
+
+                        <dt>
+                            @Html.DisplayNameFor(model => model.Question2)
+                        </dt>
+
+                        <dd style="margin-bottom: 1%;">
+                            @Html.DisplayFor(model => model.Question2)
+                        </dd>
+
+                    </dl>
+                </div>
+                <p style="margin-top: 2%;">
+                    @Html.ActionLink("Editar", "Edit", new { id = Model.ID }) |
+                    @Html.ActionLink("Volver", "Index")
+                </p>
+            </div>
+            <!-- /.col-lg-12 -->
+        </div>
+        <!-- /.row -->
     </div>
-    <p>
-        @Html.ActionLink("Edit", "Edit", new { id = Model.ID }) |
-        @Html.ActionLink("Back to List", "Index")
-    </p>
+    <!-- /.container-fluid -->
+   
+
 </body>
 </html>

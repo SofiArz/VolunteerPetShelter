@@ -13,8 +13,13 @@ namespace VolunteerPetShelter.Models
     {
         [Key]
         [DatabaseGenerated(DatabaseGeneratedOption.Identity)]
+        [Display(Name = "Solicitud N°")]
         public int VolunteerFormID { get; set; }
+
+        [Display(Name = "Vehiculo propio")]
         public bool  Question1 { get; set; } //Car question
+
+        [Display(Name = "Area de interés")]
         public VolunteerWorks Question2 { get; set; }
         public virtual ICollection<Person> Persons { get; set; }
         
